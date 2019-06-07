@@ -1,0 +1,42 @@
+POST /restaurantService
+
+Request:
+
+{
+    "action": "getMenu",
+    "category": "desserts"
+}
+
+Response:
+
+[
+    {
+        "idMenuItem": 1,
+        "description": "cake"
+    },
+    {
+        "idMenuItem": 2,
+        "description": "icecream"
+    }
+]
+
+POST /restaurantService
+
+Resquest:
+
+{
+    "action": "saveOrder",
+    items: [
+        {
+            "idMenuItem": 1,
+            "quantity": 1
+        }
+    ],
+    "paymentMethod": "cash"
+}
+
+Response:
+
+{
+    "idOrder": 9912
+}

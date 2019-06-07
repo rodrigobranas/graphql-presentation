@@ -1,0 +1,41 @@
+POST /order
+
+Resquest:
+
+{
+    items: [
+        {
+            "idMenuItem": 1,
+            "quantity": 1
+        }
+    ],
+    "paymentMethod": "cash"
+}
+
+Response:
+
+{
+    "idOrder": 9912,
+    "links": [
+        {
+            "rel": "add_order_item",
+            "href": "/order/9912/item",
+            "method": "POST"
+        },
+        {
+            "rel": "cancel_order_item",
+            "href": "/order/9912/item/{?idMenuItem}",
+            "method": "DELETE"
+        },
+        {
+            "rel": "change_payment_method",
+            "href": "/order/9912/paymentMethod",
+            "method": "PUT"
+        },
+        {
+            "rel": "cancel_order",
+            "href": "/order/9912",
+            "method": "DELETE"
+        }
+    ]
+}

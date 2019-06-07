@@ -1,0 +1,34 @@
+GET /menu/desserts
+
+Response:
+
+[
+    {
+        "idMenuItem": 1,
+        "description": "cake"
+    },
+    {
+        "idMenuItem": 2,
+        "description": "icecream"
+    }
+]
+
+POST /order
+
+Resquest:
+
+{
+    items: [
+        {
+            "idMenuItem": 1,
+            "quantity": 1
+        }
+    ],
+    "paymentMethod": "cash"
+}
+
+Response:
+
+{
+    "idOrder": 9912
+}
