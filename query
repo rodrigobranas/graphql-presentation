@@ -1,0 +1,13 @@
+{
+    channels (username: "rodrigobranas") {
+        name,
+        subscribers,
+        playlists {
+            name,
+            videos {
+                title,
+                views
+            }
+        }
+    }
+}

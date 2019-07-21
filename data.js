@@ -55,7 +55,6 @@ exports.getData = function (collection, key, value) {
 };
 
 exports.saveData = function (collection, value) {
-    console.log(arguments)
     data[collection].push(value);
     return value;
 };
